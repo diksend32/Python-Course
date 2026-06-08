@@ -1,12 +1,10 @@
-from typing import List
-
 
 def task_1(array: List[int], target: int) -> List[int]:
     r = {}
     for i, n in enumerate(array):
-    # enumerate -- return the value and index
+        # enumerate -- return the value and index
         if target - n in r:
-            return[n, target - n]
+            return [n, target - n]
         else:
             r[n] = i
 
@@ -25,6 +23,7 @@ def task_2(number: int) -> int:
         result = result * 10 + digit
         number = int(number / 10)
     return sign * result
+
 
 def task_3(array: List[int]) -> int:
     d = {}
