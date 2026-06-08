@@ -24,7 +24,7 @@ def task_2(number: int) -> int:
         digit = number % 10
         result = result * 10 + digit
         number = int(number / 10)
-
+    return sign * result
 
 def task_3(array: List[int]) -> int:
     d = {}
@@ -63,6 +63,6 @@ def task_4(string: str) -> int:
 def task_5(array: List[int]) -> int:
     m = array[0]
     for i in range(1, len(array)-1):
-        if m > sample[i]:
-            m = sample[i]
+        if m > array[i]:
+            m = array[i]
     return m
