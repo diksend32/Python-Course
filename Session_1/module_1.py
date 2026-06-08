@@ -3,12 +3,12 @@ from typing import List
 
 def task_1(array: List[int], target: int) -> List[int]:
     r = {}
-    for i, n in enumerate(sample):
+    for i, n in enumerate(array):
     # enumerate -- return the value and index
         if target - n in r:
             return[n, target - n]
         else:
-             r[n] = i
+            r[n] = i
 
 
 def task_2(number: int) -> int:
@@ -28,11 +28,13 @@ def task_2(number: int) -> int:
 
 def task_3(array: List[int]) -> int:
     d = {}
-    for i in sample:
-        if i not in d.keys():
+
+    for i in array:
+        if i not in d:
             d[i] = 1
         else:
             return i
+
     return -1
 
 
