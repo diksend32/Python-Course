@@ -1,4 +1,4 @@
-
+from typing import List
 def task_1(array: List[int], target: int) -> List[int]:
     r = {}
     for i, n in enumerate(array):
