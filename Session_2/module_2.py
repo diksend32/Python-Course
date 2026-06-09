@@ -8,7 +8,7 @@ def task_1(data_1: Dict[str, int], data_2: Dict[str, int]):
     for i in data_1.keys():
         if i in data_2.keys():
             r[i] = data_1[i] + data_2[i]
-        else :
+        else:
             r[i] = data_1[i]
     for i in data_2.keys():
         if i not in data_1.keys():
