@@ -18,7 +18,7 @@ def task_1(data_1: Dict[str, int], data_2: Dict[str, int]):
 
 def task_2():
     m = {}
-    for i in range(1,16):
+    for i in range(1, 16):
         m[i] = i**2
     return m
 
