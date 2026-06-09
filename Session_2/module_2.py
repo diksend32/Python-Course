@@ -45,10 +45,10 @@ def task_4(data: Dict[str, int]):
         return list(data.keys())
     else:
         r = []
-        l = data.values()  # finding 3 max values
-        l = sorted(l, reverse = True)[:3]
+        max_values = data.values()  # finding 3 max values
+        max_values = sorted(max_values, reverse=True)[:3]
         for i in data.keys():
-            if data[i] in l:
+            if data[i] in max_values:
                 r.append(i)
     return r
 
