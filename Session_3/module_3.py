@@ -1,4 +1,4 @@
-# import time
+import time
 from typing import List
 
 Matrix = List[List[int]]
@@ -10,7 +10,7 @@ def task_1(exp: int):
     return power
 
 
-def task_2(*args, **kwags):
+def task_2(*args, **kwargs):
     for value in args:
         print(value)
 
@@ -32,13 +32,6 @@ def task_3(name):
 
 
 def timer(func):
-    pass
-
-
-@timer
-import time
-
-def timer(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
 
@@ -52,7 +45,8 @@ def timer(func):
 
     return wrapper
 
-def task_5(matrix):
+
+def task_5(matrix: Matrix):
     result = []
 
     for col in range(len(matrix[0])):
