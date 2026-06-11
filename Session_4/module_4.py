@@ -52,4 +52,3 @@ class Trainee:
             f"missed lectures {self.missed_lectures} points;\n"
             f"current mark {self.mark};\n"
         )
-        
