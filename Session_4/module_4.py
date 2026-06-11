@@ -1,8 +1,7 @@
 PASSING_GRADE = 8
 
 
-class Trainee:
-    
+class Trainee: 
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
