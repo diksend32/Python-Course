@@ -6,8 +6,7 @@ from random import seed
 from typing import List, Union
 
 import requests
-from requests.exceptions import ConnectionError
-from gensim.utils import simple_preprocess
+from requests.exceptions import RequestException
 import re
 
 S5_PATH = Path(os.path.realpath(__file__)).parent
